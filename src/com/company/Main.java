@@ -20,10 +20,17 @@ public class Main {
                 break;
             }
             else if (style.equalsIgnoreCase("rgb")) {
-                System.out.println("Enter your color.");
-                String SoConfused = kb.next();
+                System.out.println("Enter your R.");
+                int r = kb.nextInt();
+                System.out.println("Enter your G.");
+                int g = kb.nextInt();
+                System.out.println("Enter your B.");
+                int b = kb.nextInt();
+                System.out.println("Enter your entire sequence. No spaces.");
+                String q = kb.next();
 
-                CommonName.GetCommonName(SoConfused);
+                ToHex.toHex(r,g,b);
+                CommonName.GetCommonName(q);
                 break;
             }
             else if (style.equalsIgnoreCase("hex")) {

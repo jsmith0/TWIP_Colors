@@ -4,15 +4,15 @@ package com.company;
 public class CommonName {
 
     static String [] names = {"Black","Navy","DarkBlue","MediumBlue","Blue","DarkGreen","Green","Teal","DarkCyan","DeepSkyBlue",
-            "DarkTurquoise","MediumSpringGreen","Lime","SpringGreen","Aqua","Cyan","MidnightBlue","DodgerBlue",
+            "DarkTurquoise","MediumSpringGreen","Lime","SpringGreen","Aqua","Cyan","MidnightBlue","Dodgeblue2",
             "LightSeaGreen","ForestGreen","SeaGreen","DarkSlateGray","DarkSlateGrey","LimeGreen","MediumSeaGreen",
             "Turquoise","RoyalBlue","SteelBlue","DarkSlateBlue","MediumTurquoise","Indigo","DarkOliveGreen",
-            "CadetBlue","CornflowerBlue","RebeccaPurple","MediumAquaMarine","DimGray","DimGrey","SlateBlue",
+            "CadetBlue","Cornfloweblue2","RebeccaPurple","MediumAquaMarine","DimGray","DimGrey","SlateBlue",
             "OliveDrab","SlateGray","SlateGrey","LightSlateGray","LightSlateGrey","MediumSlateBlue","LawnGreen",
             "Chartreuse","Aquamarine","Maroon","Purple","Olive","Gray","Grey","SkyBlue","LightSkyBlue",
             "BlueViolet","DarkRed","DarkMagenta","SaddleBrown","DarkSeaGreen","LightGreen","MediumPurple",
             "DarkViolet","PaleGreen","DarkOrchid","YellowGreen","Sienna","Brown","DarkGray","DarkGrey",
-            "LightBlue","GreenYellow","PaleTurquoise","LightSteelBlue","PowderBlue","FireBrick ","DarkGoldenRod",
+            "LightBlue","GreenYellow","PaleTurquoise","LightSteelBlue","Powdeblue2","FireBrick ","DarkGoldenRod",
             "MediumOrchid","RosyBrown","DarkKhaki","Silver","MediumVioletRed","IndianRed","Peru ","Chocolate",
             "Tan","LightGray","LightGrey","Thistle","Orchid","GoldenRod","PaleVioletRed","Crimson",
             "Gainsboro","Plum","BurlyWood","LightCyan","Lavender","DarkSalmon","Violet","PaleGoldenRod",
@@ -42,19 +42,19 @@ public class CommonName {
     public static String GetCommonName(String q){
         for (int n = 0; n < names.length; n++){
             if (q.equalsIgnoreCase(names[n])){
-                String e = "Your Color... "+ names[n];
+                String e = "Your Color is... "+ names[n] +".\nIts hex code is... " + codes[n];
                 System.out.println(e);
                 return e;
             }
         }
         for (int n = 0; n < names.length; n++){
             if (q.equalsIgnoreCase(codes[n])){
-                String e = "Your Color... "+ names[n];
+                String e = "Your Color is... "+ names[n] +".\nIts hex code is... " + codes[n];
                 System.out.println(e);
                 return e;
             }
         }
-        String w = "Your color does not exist";
+        String w = "Your color does not exist in my library.";
         System.out.println(w);
         return w;
     }
