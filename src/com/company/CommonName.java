@@ -42,7 +42,14 @@ public class CommonName {
     public static String GetCommonName(String q){
         for (int n = 0; n < names.length; n++){
             if (q.equalsIgnoreCase(names[n])){
-                String e = "Your Color... "+ names[n] +"... exists. Its HTML code is " + codes[n];
+                String e = "Your Color... "+ names[n];
+                System.out.println(e);
+                return e;
+            }
+        }
+        for (int n = 0; n < names.length; n++){
+            if (q.equalsIgnoreCase(codes[n])){
+                String e = "Your Color... "+ names[n];
                 System.out.println(e);
                 return e;
             }

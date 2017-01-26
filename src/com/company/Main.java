@@ -30,6 +30,7 @@ public class Main {
                 System.out.println("Enter your color.");
                 String SoConfused = kb.next();
 
+                GetRGB.getRGB(SoConfused);
                 CommonName.GetCommonName(SoConfused);
                 break;
             }
